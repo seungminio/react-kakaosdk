@@ -41,7 +41,6 @@ public class RNAKakaoSDK: NSObject {
     @objc(init:)
     func sdkinit(_ appKey: String) -> Void {
         KakaoSDK.initSDK(appKey: appKey)
-        KakaoSDKCommon.initSDK(appKey: appKey)
         inited = true
     }
 
