@@ -9,7 +9,7 @@ const createShareButton = (props: IStoryDefaultProps): React.FC => {
     console.warn('container field is Web Only.');
   }
   return subProps =>
-    React.createElement(TouchableWithoutFeedback, {
+    React.createElement(TouchableWithoutFeedback as any, {
       onPress: () => share({ url: props.url, text: props.text }),
       ...subProps,
     });
