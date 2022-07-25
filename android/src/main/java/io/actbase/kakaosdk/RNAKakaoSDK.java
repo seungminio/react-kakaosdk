@@ -217,7 +217,7 @@ public class RNAKakaoSDK extends ReactContextBaseJavaModule {
      perms.add(permissions.getString(i));
    }
    // change class into user api at kakao sdk 2.4
-   UserApiClient.getInstance().loginWithNewScopes(context, perms, 'null', (token, error) -> {
+   UserApiClient.getInstance().loginWithNewScopes(context, perms, "null", (token, error) -> {
      try {
        if (error != null) {
          throw new Exception(error.getMessage());
