@@ -25,15 +25,22 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
   s.dependency 'React-Core'
-  s.dependency 'KakaoSDK', '2.11.3'
+  s.dependency 'KakaoSDKCommon', '2.11.3'
+  s.dependency 'KakaoSDKAuth', '2.11.3'
+  s.dependency 'KakaoSDKUser', '2.11.3'
+  s.dependency 'KakaoSDKTalk', '2.11.3'
+  s.dependency 'KakaoSDKShare', '2.11.3'
+  s.dependency 'KakaoSDKTemplate', '2.11.3'
 
   s.xcconfig = {
     "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" => "YES",
-    "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES"
+    "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES",
+    "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES"
   }
   s.pod_target_xcconfig = {
     "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" => "YES",
-    "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES"
+    "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES",
+    "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES"
   }
 #  s.pod_target_xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_TARGET_SRCROOT}/ios/RNAKakaoSDK-Bridging-Header.h' }
 end
