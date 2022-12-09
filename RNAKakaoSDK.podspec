@@ -44,6 +44,3 @@ Pod::Spec.new do |s|
   }
 #  s.pod_target_xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_TARGET_SRCROOT}/ios/RNAKakaoSDK-Bridging-Header.h' }
 end
-
-
-
