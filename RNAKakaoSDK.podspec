@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage       = package['homepage']
   s.license        = package['license']
 
-  s.platform       = :ios, "11.0"
+  s.platform       = :ios, "13.0"
   s.framework      = 'MobileCoreServices'
   s.requires_arc   = true
 
@@ -20,17 +20,17 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.1'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   s.ios.framework         = 'MobileCoreServices'
 
   s.dependency 'React'
   s.dependency 'React-Core'
-  s.dependency 'KakaoSDKCommon', '2.11.3'
-  s.dependency 'KakaoSDKAuth', '2.11.3'
-  s.dependency 'KakaoSDKUser', '2.11.3'
-  s.dependency 'KakaoSDKTalk', '2.11.3'
-  s.dependency 'KakaoSDKShare', '2.11.3'
-  s.dependency 'KakaoSDKTemplate', '2.11.3'
+  s.dependency 'KakaoSDKCommon', '~> 2.18.0'
+  s.dependency 'KakaoSDKAuth', '~> 2.18.0'
+  s.dependency 'KakaoSDKUser', '~> 2.18.0'
+  s.dependency 'KakaoSDKTalk', '~> 2.18.0'
+  s.dependency 'KakaoSDKShare', '~> 2.18.0'
+  s.dependency 'KakaoSDKTemplate', '~> 2.18.0'
 
   s.xcconfig = {
     "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" => "YES",
