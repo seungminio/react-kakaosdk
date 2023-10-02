@@ -1,5 +1,5 @@
 #import "WithKakaoSDK.h"
-#import "RNAKakaoSDK-Swift.h"
+#import <RNAKakaoSDK/RNAKakaoSDK-Swift.h>
 
 @implementation WithKakaoSDK
 
